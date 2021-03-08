@@ -71,7 +71,7 @@ let scheduler = {
             let willTime = moment(randomDate(options));
             willTime = '00:00:00';
             // 任务的随机延迟时间
-            let waitTime = options.dev ? 0 : Math.floor(Math.random() * 65)
+            let waitTime = options.dev ? 0 : Math.floor(Math.random() * (65-50)+50)
             if (options) {
                 if (options.isCircle || options.dev) {
                     willTime = moment().startOf('days');
