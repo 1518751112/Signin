@@ -130,29 +130,34 @@ var start = async (params) => {
   // })
 
   // 首页-签到有礼-免费抽-赢vivo x60
-  await scheduler.regTask('dailyNcow', async (request) => {
-    await require('./dailyNcow').doTask(request, options)
-  }, taskOption)
+  // 活动已下线
+  //await scheduler.regTask('dailyNcow', async (request) => {
+  // await require('./dailyNcow').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-拿红米笔记本-接元宝
-  await scheduler.regTask('dailyIngots', async (request) => {
-    await require('./dailyIngots').doTask(request, options)
-  }, taskOption)
+  // 活动已下线
+  //await scheduler.regTask('dailyIngots', async (request) => {
+  //  await require('./dailyIngots').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-抓OPPO手机
-  await scheduler.regTask('dailyGrabdollPage', async (request) => {
-    await require('./dailyGrabdollPage').doTask(request, options)
-  }, taskOption)
+  // 活动已下线
+  //await scheduler.regTask('dailyGrabdollPage', async (request) => {
+  // await require('./dailyGrabdollPage').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-拿666积分-豪礼大派送抽奖
-  await scheduler.regTask('jflottery', async (request) => {
-    await require('./jflottery').timesDraw(request, options)
-  }, taskOption)
+  // 活动已下线
+  //await scheduler.regTask('jflottery', async (request) => {
+  //  await require('./jflottery').timesDraw(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-拿苹果iPad Pro(摇一摇)
-  await scheduler.regTask('dailyYYY', async (request) => {
-    await require('./dailyYYY').doTask(request, options)
-  }, taskOption)
+  // 活动已下线
+  //await scheduler.regTask('dailyYYY', async (request) => {
+  //  await require('./dailyYYY').doTask(request, options)
+  //}, taskOption)
 
   // 首页-签到有礼-免费抽-华为mate40pro(刮刮乐)
   await scheduler.regTask('dailyVideoScratchcard', async (request) => {
